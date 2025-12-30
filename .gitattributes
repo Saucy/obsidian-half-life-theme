@@ -1,0 +1,24 @@
+* text=auto
+
+# Large files (LFS)
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.xcf filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.aif binary
+
+# Unity 3D plugins/3rd party assets
+Assets/Plugins/**/*.asset filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/**/*.png filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/**/*.pdf filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/**/*.unitypackage filter=lfs diff=lfs merge=lfs -text
